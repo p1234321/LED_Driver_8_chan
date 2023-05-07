@@ -1,0 +1,6 @@
+04-20 14:33:46 net2net_min_distance.action_net2net_min_distance 84:Plugin executed on: 'darwin'
+04-20 14:33:46 net2net_min_distance.action_net2net_min_distance 85:Plugin executed with python version: '2.7.13 (default, Mar  6 2019, 04:43:15) \n[GCC 4.2.1 Compatible Apple LLVM 8.0.0 (clang-800.0.42.1)]'
+04-20 14:33:46 net2net_min_distance.action_net2net_min_distance 86:KiCad build version: Unknown
+04-20 14:33:46 net2net_min_distance.action_net2net_min_distance 87:Net2net distance plugin version: 15 started
+04-20 14:33:46 net2net_min_distance.net2net_distance 110:Net2net getting min distance between /OD_MOSFET/OD_OUT and Net-(Q1-Pad1)
+04-20 14:33:46 net2net_min_distance.net2net_distance 122:Found 2 tracks on /OD_MOSFET/OD_OUT and 3tracks on Net-(Q1-Pad1)

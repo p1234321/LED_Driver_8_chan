@@ -1,0 +1,744 @@
+EESchema Schematic File Version 4
+LIBS:LED_Driver-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 9
+Title "LED Driver Board 3 Channel"
+Date "2020-04-22"
+Rev "V0.1"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 "Author: Paul Pritz"
+$EndDescr
+Wire Wire Line
+	5500 950  5250 950 
+Text Label 4250 1200 0    50   ~ 0
+IN_0
+Wire Wire Line
+	4250 1200 4550 1200
+Wire Wire Line
+	4250 950  4550 950 
+Wire Wire Line
+	4200 1050 4550 1050
+Text GLabel 4200 1050 0    50   Input ~ 0
+VIN
+$Comp
+L power:GND #PWR01
+U 1 1 5E9E3989
+P 4250 950
+F 0 "#PWR01" H 4250 700 50  0001 C CNN
+F 1 "GND" V 4255 822 50  0000 R CNN
+F 2 "" H 4250 950 50  0001 C CNN
+F 3 "" H 4250 950 50  0001 C CNN
+	1    4250 950 
+	0    1    1    0   
+$EndComp
+$Sheet
+S 4550 850  700  500 
+U 5E9DEF1C
+F0 "OD_MOSFET" 50
+F1 "OD_MOSFET_DRIVER.sch" 50
+F2 "_GND" I L 4550 950 50 
+F3 "OD_OUT" I R 5250 950 50 
+F4 "IN" I L 4550 1200 50 
+F5 "_VPULLUP" I L 4550 1050 50 
+$EndSheet
+Wire Wire Line
+	5500 1750 5250 1750
+Text Label 4250 2000 0    50   ~ 0
+IN_1
+Wire Wire Line
+	4250 2000 4550 2000
+Wire Wire Line
+	4250 1750 4550 1750
+Wire Wire Line
+	4200 1850 4550 1850
+Text GLabel 4200 1850 0    50   Input ~ 0
+VIN
+$Comp
+L power:GND #PWR0101
+U 1 1 5E9F11B1
+P 4250 1750
+F 0 "#PWR0101" H 4250 1500 50  0001 C CNN
+F 1 "GND" V 4255 1622 50  0000 R CNN
+F 2 "" H 4250 1750 50  0001 C CNN
+F 3 "" H 4250 1750 50  0001 C CNN
+	1    4250 1750
+	0    1    1    0   
+$EndComp
+$Sheet
+S 4550 1650 700  500 
+U 5E9F11B7
+F0 "sheet5E9F11A5" 50
+F1 "OD_MOSFET_DRIVER.sch" 50
+F2 "_GND" I L 4550 1750 50 
+F3 "OD_OUT" I R 5250 1750 50 
+F4 "IN" I L 4550 2000 50 
+F5 "_VPULLUP" I L 4550 1850 50 
+$EndSheet
+Wire Wire Line
+	5500 2600 5250 2600
+Text Label 4250 2850 0    50   ~ 0
+IN_2
+Wire Wire Line
+	4250 2850 4550 2850
+Wire Wire Line
+	4250 2600 4550 2600
+Wire Wire Line
+	4200 2700 4550 2700
+Text GLabel 4200 2700 0    50   Input ~ 0
+VIN
+$Comp
+L power:GND #PWR0102
+U 1 1 5E9F1AB6
+P 4250 2600
+F 0 "#PWR0102" H 4250 2350 50  0001 C CNN
+F 1 "GND" V 4255 2472 50  0000 R CNN
+F 2 "" H 4250 2600 50  0001 C CNN
+F 3 "" H 4250 2600 50  0001 C CNN
+	1    4250 2600
+	0    1    1    0   
+$EndComp
+$Sheet
+S 4550 2500 700  500 
+U 5E9F1ABC
+F0 "sheet5E9F1AAA" 50
+F1 "OD_MOSFET_DRIVER.sch" 50
+F2 "_GND" I L 4550 2600 50 
+F3 "OD_OUT" I R 5250 2600 50 
+F4 "IN" I L 4550 2850 50 
+F5 "_VPULLUP" I L 4550 2700 50 
+$EndSheet
+$Comp
+L Connector_Generic:Conn_01x02 J5
+U 1 1 5E9F3037
+P 6800 1000
+F 0 "J5" H 6880 992 50  0000 L CNN
+F 1 "Conn_01x02" H 6880 901 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 6800 1000 50  0001 C CNN
+F 3 "~" H 6800 1000 50  0001 C CNN
+	1    6800 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 5E9F3DBA
+P 6800 1800
+F 0 "J3" H 6880 1792 50  0000 L CNN
+F 1 "Conn_01x02" H 6880 1701 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 6800 1800 50  0001 C CNN
+F 3 "~" H 6800 1800 50  0001 C CNN
+	1    6800 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J4
+U 1 1 5E9F4144
+P 6800 2700
+F 0 "J4" H 6880 2692 50  0000 L CNN
+F 1 "Conn_01x02" H 6880 2601 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 6800 2700 50  0001 C CNN
+F 3 "~" H 6800 2700 50  0001 C CNN
+	1    6800 2700
+	1    0    0    -1  
+$EndComp
+Text Label 2700 4250 2    50   ~ 0
+IN_0
+Wire Wire Line
+	2700 4250 2400 4250
+Text Label 2700 4350 2    50   ~ 0
+IN_1
+Wire Wire Line
+	2700 4350 2400 4350
+Text Label 2700 4450 2    50   ~ 0
+IN_2
+Wire Wire Line
+	2700 4450 2400 4450
+Wire Wire Line
+	6250 1000 6600 1000
+Text GLabel 6250 1000 0    50   Input ~ 0
+VIN
+Wire Wire Line
+	6250 1800 6600 1800
+Text GLabel 6250 1800 0    50   Input ~ 0
+VIN
+Wire Wire Line
+	6250 2700 6600 2700
+Text GLabel 6250 2700 0    50   Input ~ 0
+VIN
+Wire Wire Line
+	6300 1100 6600 1100
+Wire Wire Line
+	6350 1900 6600 1900
+Wire Wire Line
+	6300 2800 6600 2800
+Text Label 6300 1100 0    50   ~ 0
+OUT_0
+Text Label 6350 1900 0    50   ~ 0
+OUT_1
+Text Label 6300 2800 0    50   ~ 0
+OUT_2
+Text Label 5500 2600 2    50   ~ 0
+OUT_2
+Text Label 5500 1750 2    50   ~ 0
+OUT_1
+Text Label 5500 950  2    50   ~ 0
+OUT_0
+Wire Wire Line
+	2600 3250 2400 3250
+Wire Wire Line
+	2600 3350 2400 3350
+$Comp
+L power:GND #PWR0103
+U 1 1 5E9FED0A
+P 2600 3250
+F 0 "#PWR0103" H 2600 3000 50  0001 C CNN
+F 1 "GND" V 2605 3122 50  0000 R CNN
+F 2 "" H 2600 3250 50  0001 C CNN
+F 3 "" H 2600 3250 50  0001 C CNN
+	1    2600 3250
+	0    -1   -1   0   
+$EndComp
+Text GLabel 2600 3350 2    50   Input ~ 0
+VIN
+$Comp
+L Connector_Generic:Conn_01x02 J8
+U 1 1 5EA0F7CA
+P 6800 1000
+F 0 "J8" H 6880 992 50  0000 L CNN
+F 1 "Conn_01x02" H 6880 901 50  0000 L CNN
+F 2 "Connectors_IFS:KF2510-A-2P-M-TH-V" H 6800 1000 50  0001 C CNN
+F 3 "~" H 6800 1000 50  0001 C CNN
+	1    6800 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J6
+U 1 1 5EA0F7D0
+P 6800 1800
+F 0 "J6" H 6880 1792 50  0000 L CNN
+F 1 "Conn_01x02" H 6880 1701 50  0000 L CNN
+F 2 "Connectors_IFS:KF2510-A-2P-M-TH-V" H 6800 1800 50  0001 C CNN
+F 3 "~" H 6800 1800 50  0001 C CNN
+	1    6800 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J7
+U 1 1 5EA0F7D6
+P 6800 2700
+F 0 "J7" H 6880 2692 50  0000 L CNN
+F 1 "Conn_01x02" H 6880 2601 50  0000 L CNN
+F 2 "Connectors_IFS:KF2510-A-2P-M-TH-V" H 6800 2700 50  0001 C CNN
+F 3 "~" H 6800 2700 50  0001 C CNN
+	1    6800 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 5E9F8679
+P 2200 3350
+F 0 "J1" H 2280 3342 50  0000 L CNN
+F 1 "Conn_01x02" H 2280 3251 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 2200 3350 50  0001 C CNN
+F 3 "~" H 2200 3350 50  0001 C CNN
+	1    2200 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J9
+U 1 1 5EA164F8
+P 2200 3350
+F 0 "J9" H 2280 3342 50  0000 L CNN
+F 1 "Conn_01x02" H 2280 3251 50  0000 L CNN
+F 2 "Connectors_IFS:KF2510-A-2P-M-TH-V" H 2200 3350 50  0001 C CNN
+F 3 "~" H 2200 3350 50  0001 C CNN
+	1    2200 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5EA037D9
+P 9300 5300
+F 0 "H4" H 9400 5346 50  0000 L CNN
+F 1 "MountingHole" H 9400 5255 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm" H 9300 5300 50  0001 C CNN
+F 3 "~" H 9300 5300 50  0001 C CNN
+	1    9300 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5EA038AB
+P 9300 5100
+F 0 "H3" H 9400 5146 50  0000 L CNN
+F 1 "MountingHole" H 9400 5055 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm" H 9300 5100 50  0001 C CNN
+F 3 "~" H 9300 5100 50  0001 C CNN
+	1    9300 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5EA03CAD
+P 9300 4900
+F 0 "H2" H 9400 4946 50  0000 L CNN
+F 1 "MountingHole" H 9400 4855 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm" H 9300 4900 50  0001 C CNN
+F 3 "~" H 9300 4900 50  0001 C CNN
+	1    9300 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5EA03EA0
+P 9300 4700
+F 0 "H1" H 9400 4746 50  0000 L CNN
+F 1 "MountingHole" H 9400 4655 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm" H 9300 4700 50  0001 C CNN
+F 3 "~" H 9300 4700 50  0001 C CNN
+	1    9300 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J12
+U 1 1 5EA0B01E
+P 2650 2400
+F 0 "J12" H 2730 2442 50  0000 L CNN
+F 1 "Conn_01x03" H 2730 2351 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2650 2400 50  0001 C CNN
+F 3 "~" H 2650 2400 50  0001 C CNN
+	1    2650 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J11
+U 1 1 5EA0B792
+P 2650 1900
+F 0 "J11" H 2730 1942 50  0000 L CNN
+F 1 "Conn_01x03" H 2730 1851 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2650 1900 50  0001 C CNN
+F 3 "~" H 2650 1900 50  0001 C CNN
+	1    2650 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 2500 2450 2400
+Wire Wire Line
+	2450 2400 2450 2300
+Connection ~ 2450 2400
+Wire Wire Line
+	2450 2000 2450 1900
+Wire Wire Line
+	2450 1900 2450 1800
+Connection ~ 2450 1900
+$Comp
+L power:GND #PWR0104
+U 1 1 5EA0D5AF
+P 2450 2500
+F 0 "#PWR0104" H 2450 2250 50  0001 C CNN
+F 1 "GND" V 2455 2372 50  0000 R CNN
+F 2 "" H 2450 2500 50  0001 C CNN
+F 3 "" H 2450 2500 50  0001 C CNN
+	1    2450 2500
+	0    1    1    0   
+$EndComp
+Connection ~ 2450 2500
+Text GLabel 2450 2000 0    50   Input ~ 0
+VIN
+Connection ~ 6600 2700
+Connection ~ 6600 2800
+Connection ~ 6600 1800
+Connection ~ 6600 1900
+Connection ~ 6600 1000
+Connection ~ 6600 1100
+Wire Wire Line
+	5500 3400 5250 3400
+Text Label 4250 3650 0    50   ~ 0
+IN_3
+Wire Wire Line
+	4250 3650 4550 3650
+Wire Wire Line
+	4250 3400 4550 3400
+Wire Wire Line
+	4200 3500 4550 3500
+Text GLabel 4200 3500 0    50   Input ~ 0
+VIN
+$Comp
+L power:GND #PWR0105
+U 1 1 5EA2E780
+P 4250 3400
+F 0 "#PWR0105" H 4250 3150 50  0001 C CNN
+F 1 "GND" V 4255 3272 50  0000 R CNN
+F 2 "" H 4250 3400 50  0001 C CNN
+F 3 "" H 4250 3400 50  0001 C CNN
+	1    4250 3400
+	0    1    1    0   
+$EndComp
+$Sheet
+S 4550 3300 700  500 
+U 5EA2E786
+F0 "sheet5EA2E774" 50
+F1 "OD_MOSFET_DRIVER.sch" 50
+F2 "_GND" I L 4550 3400 50 
+F3 "OD_OUT" I R 5250 3400 50 
+F4 "IN" I L 4550 3650 50 
+F5 "_VPULLUP" I L 4550 3500 50 
+$EndSheet
+$Comp
+L Connector_Generic:Conn_01x02 J13
+U 1 1 5EA2E78C
+P 6800 3500
+F 0 "J13" H 6880 3492 50  0000 L CNN
+F 1 "Conn_01x02" H 6880 3401 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 6800 3500 50  0001 C CNN
+F 3 "~" H 6800 3500 50  0001 C CNN
+	1    6800 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 3500 6600 3500
+Text GLabel 6250 3500 0    50   Input ~ 0
+VIN
+Wire Wire Line
+	6300 3600 6600 3600
+Text Label 6300 3600 0    50   ~ 0
+OUT_3
+Text Label 5500 3400 2    50   ~ 0
+OUT_3
+$Comp
+L Connector_Generic:Conn_01x02 J14
+U 1 1 5EA2E797
+P 6800 3500
+F 0 "J14" H 6880 3492 50  0000 L CNN
+F 1 "Conn_01x02" H 6880 3401 50  0000 L CNN
+F 2 "Connectors_IFS:KF2510-A-2P-M-TH-V" H 6800 3500 50  0001 C CNN
+F 3 "~" H 6800 3500 50  0001 C CNN
+	1    6800 3500
+	1    0    0    -1  
+$EndComp
+Connection ~ 6600 3500
+Connection ~ 6600 3600
+Text Label 2700 4550 2    50   ~ 0
+IN_3
+Wire Wire Line
+	2700 4550 2400 4550
+Wire Wire Line
+	5500 4200 5250 4200
+Text Label 4250 4450 0    50   ~ 0
+IN_4
+Wire Wire Line
+	4250 4450 4550 4450
+Wire Wire Line
+	4250 4200 4550 4200
+Wire Wire Line
+	4200 4300 4550 4300
+Text GLabel 4200 4300 0    50   Input ~ 0
+VIN
+$Comp
+L power:GND #PWR0106
+U 1 1 5EA3F504
+P 4250 4200
+F 0 "#PWR0106" H 4250 3950 50  0001 C CNN
+F 1 "GND" V 4255 4072 50  0000 R CNN
+F 2 "" H 4250 4200 50  0001 C CNN
+F 3 "" H 4250 4200 50  0001 C CNN
+	1    4250 4200
+	0    1    1    0   
+$EndComp
+$Sheet
+S 4550 4100 700  500 
+U 5EA3F50A
+F0 "sheet5EA3F4F5" 50
+F1 "OD_MOSFET_DRIVER.sch" 50
+F2 "_GND" I L 4550 4200 50 
+F3 "OD_OUT" I R 5250 4200 50 
+F4 "IN" I L 4550 4450 50 
+F5 "_VPULLUP" I L 4550 4300 50 
+$EndSheet
+Wire Wire Line
+	5500 5000 5250 5000
+Text Label 4250 5250 0    50   ~ 0
+IN_5
+Wire Wire Line
+	4250 5250 4550 5250
+Wire Wire Line
+	4250 5000 4550 5000
+Wire Wire Line
+	4200 5100 4550 5100
+Text GLabel 4200 5100 0    50   Input ~ 0
+VIN
+$Comp
+L power:GND #PWR0107
+U 1 1 5EA3F516
+P 4250 5000
+F 0 "#PWR0107" H 4250 4750 50  0001 C CNN
+F 1 "GND" V 4255 4872 50  0000 R CNN
+F 2 "" H 4250 5000 50  0001 C CNN
+F 3 "" H 4250 5000 50  0001 C CNN
+	1    4250 5000
+	0    1    1    0   
+$EndComp
+$Sheet
+S 4550 4900 700  500 
+U 5EA3F51C
+F0 "sheet5EA3F4F6" 50
+F1 "OD_MOSFET_DRIVER.sch" 50
+F2 "_GND" I L 4550 5000 50 
+F3 "OD_OUT" I R 5250 5000 50 
+F4 "IN" I L 4550 5250 50 
+F5 "_VPULLUP" I L 4550 5100 50 
+$EndSheet
+Wire Wire Line
+	5500 5850 5250 5850
+Text Label 4250 6100 0    50   ~ 0
+IN_6
+Wire Wire Line
+	4250 6100 4550 6100
+Wire Wire Line
+	4250 5850 4550 5850
+Wire Wire Line
+	4200 5950 4550 5950
+Text GLabel 4200 5950 0    50   Input ~ 0
+VIN
+$Comp
+L power:GND #PWR0108
+U 1 1 5EA3F528
+P 4250 5850
+F 0 "#PWR0108" H 4250 5600 50  0001 C CNN
+F 1 "GND" V 4255 5722 50  0000 R CNN
+F 2 "" H 4250 5850 50  0001 C CNN
+F 3 "" H 4250 5850 50  0001 C CNN
+	1    4250 5850
+	0    1    1    0   
+$EndComp
+$Sheet
+S 4550 5750 700  500 
+U 5EA3F52E
+F0 "sheet5EA3F4F7" 50
+F1 "OD_MOSFET_DRIVER.sch" 50
+F2 "_GND" I L 4550 5850 50 
+F3 "OD_OUT" I R 5250 5850 50 
+F4 "IN" I L 4550 6100 50 
+F5 "_VPULLUP" I L 4550 5950 50 
+$EndSheet
+$Comp
+L Connector_Generic:Conn_01x02 J15
+U 1 1 5EA3F534
+P 6800 4250
+F 0 "J15" H 6880 4242 50  0000 L CNN
+F 1 "Conn_01x02" H 6880 4151 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 6800 4250 50  0001 C CNN
+F 3 "~" H 6800 4250 50  0001 C CNN
+	1    6800 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J17
+U 1 1 5EA3F53A
+P 6800 5050
+F 0 "J17" H 6880 5042 50  0000 L CNN
+F 1 "Conn_01x02" H 6880 4951 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 6800 5050 50  0001 C CNN
+F 3 "~" H 6800 5050 50  0001 C CNN
+	1    6800 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J19
+U 1 1 5EA3F540
+P 6800 5950
+F 0 "J19" H 6880 5942 50  0000 L CNN
+F 1 "Conn_01x02" H 6880 5851 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 6800 5950 50  0001 C CNN
+F 3 "~" H 6800 5950 50  0001 C CNN
+	1    6800 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 4250 6600 4250
+Text GLabel 6250 4250 0    50   Input ~ 0
+VIN
+Wire Wire Line
+	6250 5050 6600 5050
+Text GLabel 6250 5050 0    50   Input ~ 0
+VIN
+Wire Wire Line
+	6250 5950 6600 5950
+Text GLabel 6250 5950 0    50   Input ~ 0
+VIN
+Wire Wire Line
+	6300 4350 6600 4350
+Wire Wire Line
+	6350 5150 6600 5150
+Wire Wire Line
+	6300 6050 6600 6050
+Text Label 6300 4350 0    50   ~ 0
+OUT_4
+Text Label 6350 5150 0    50   ~ 0
+OUT_5
+Text Label 6300 6050 0    50   ~ 0
+OUT_6
+Text Label 5500 5850 2    50   ~ 0
+OUT_6
+Text Label 5500 5000 2    50   ~ 0
+OUT_5
+Text Label 5500 4200 2    50   ~ 0
+OUT_4
+$Comp
+L Connector_Generic:Conn_01x02 J16
+U 1 1 5EA3F555
+P 6800 4250
+F 0 "J16" H 6880 4242 50  0000 L CNN
+F 1 "Conn_01x02" H 6880 4151 50  0000 L CNN
+F 2 "Connectors_IFS:KF2510-A-2P-M-TH-V" H 6800 4250 50  0001 C CNN
+F 3 "~" H 6800 4250 50  0001 C CNN
+	1    6800 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J18
+U 1 1 5EA3F55B
+P 6800 5050
+F 0 "J18" H 6880 5042 50  0000 L CNN
+F 1 "Conn_01x02" H 6880 4951 50  0000 L CNN
+F 2 "Connectors_IFS:KF2510-A-2P-M-TH-V" H 6800 5050 50  0001 C CNN
+F 3 "~" H 6800 5050 50  0001 C CNN
+	1    6800 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J20
+U 1 1 5EA3F561
+P 6800 5950
+F 0 "J20" H 6880 5942 50  0000 L CNN
+F 1 "Conn_01x02" H 6880 5851 50  0000 L CNN
+F 2 "Connectors_IFS:KF2510-A-2P-M-TH-V" H 6800 5950 50  0001 C CNN
+F 3 "~" H 6800 5950 50  0001 C CNN
+	1    6800 5950
+	1    0    0    -1  
+$EndComp
+Connection ~ 6600 5950
+Connection ~ 6600 6050
+Connection ~ 6600 5050
+Connection ~ 6600 5150
+Connection ~ 6600 4250
+Connection ~ 6600 4350
+Wire Wire Line
+	5500 6650 5250 6650
+Text Label 4250 6900 0    50   ~ 0
+IN_7
+Wire Wire Line
+	4250 6900 4550 6900
+Wire Wire Line
+	4250 6650 4550 6650
+Wire Wire Line
+	4200 6750 4550 6750
+Text GLabel 4200 6750 0    50   Input ~ 0
+VIN
+$Comp
+L power:GND #PWR0109
+U 1 1 5EA3F573
+P 4250 6650
+F 0 "#PWR0109" H 4250 6400 50  0001 C CNN
+F 1 "GND" V 4255 6522 50  0000 R CNN
+F 2 "" H 4250 6650 50  0001 C CNN
+F 3 "" H 4250 6650 50  0001 C CNN
+	1    4250 6650
+	0    1    1    0   
+$EndComp
+$Sheet
+S 4550 6550 700  500 
+U 5EA3F579
+F0 "sheet5EA3F4F8" 50
+F1 "OD_MOSFET_DRIVER.sch" 50
+F2 "_GND" I L 4550 6650 50 
+F3 "OD_OUT" I R 5250 6650 50 
+F4 "IN" I L 4550 6900 50 
+F5 "_VPULLUP" I L 4550 6750 50 
+$EndSheet
+$Comp
+L Connector_Generic:Conn_01x02 J21
+U 1 1 5EA3F57F
+P 6800 6750
+F 0 "J21" H 6880 6742 50  0000 L CNN
+F 1 "Conn_01x02" H 6880 6651 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 6800 6750 50  0001 C CNN
+F 3 "~" H 6800 6750 50  0001 C CNN
+	1    6800 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 6750 6600 6750
+Text GLabel 6250 6750 0    50   Input ~ 0
+VIN
+Wire Wire Line
+	6300 6850 6600 6850
+Text Label 6300 6850 0    50   ~ 0
+OUT_7
+Text Label 5500 6650 2    50   ~ 0
+OUT_7
+$Comp
+L Connector_Generic:Conn_01x02 J22
+U 1 1 5EA3F58A
+P 6800 6750
+F 0 "J22" H 6880 6742 50  0000 L CNN
+F 1 "Conn_01x02" H 6880 6651 50  0000 L CNN
+F 2 "Connectors_IFS:KF2510-A-2P-M-TH-V" H 6800 6750 50  0001 C CNN
+F 3 "~" H 6800 6750 50  0001 C CNN
+	1    6800 6750
+	1    0    0    -1  
+$EndComp
+Connection ~ 6600 6750
+Connection ~ 6600 6850
+$Comp
+L Connector_Generic:Conn_01x08 J2
+U 1 1 5EA415C0
+P 2200 4650
+F 0 "J2" H 2118 4025 50  0000 C CNN
+F 1 "Conn_01x08" H 2118 4116 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 2200 4650 50  0001 C CNN
+F 3 "~" H 2200 4650 50  0001 C CNN
+	1    2200 4650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x08 J10
+U 1 1 5EA4AFA5
+P 2200 4650
+F 0 "J10" H 2118 4025 50  0000 C CNN
+F 1 "Conn_01x08" H 2118 4116 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 2200 4650 50  0001 C CNN
+F 3 "~" H 2200 4650 50  0001 C CNN
+	1    2200 4650
+	-1   0    0    1   
+$EndComp
+Connection ~ 2400 4550
+Connection ~ 2400 4450
+Connection ~ 2400 4350
+Connection ~ 2400 4250
+Text Label 2700 4650 2    50   ~ 0
+IN_4
+Wire Wire Line
+	2700 4650 2400 4650
+Text Label 2700 4750 2    50   ~ 0
+IN_5
+Wire Wire Line
+	2700 4750 2400 4750
+Text Label 2700 4850 2    50   ~ 0
+IN_6
+Wire Wire Line
+	2700 4850 2400 4850
+Text Label 2700 4950 2    50   ~ 0
+IN_7
+Wire Wire Line
+	2700 4950 2400 4950
+Connection ~ 2400 4650
+Connection ~ 2400 4850
+Connection ~ 2400 4950
+Connection ~ 2400 4750
+$EndSCHEMATC

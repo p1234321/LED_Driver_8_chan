@@ -1,0 +1,63 @@
+04-20 14:32:50 swap_units.action_swap_units 87:Plugin executed on: 'darwin'
+04-20 14:32:50 swap_units.action_swap_units 88:Plugin executed with python version: '2.7.13 (default, Mar  6 2019, 04:43:15) \n[GCC 4.2.1 Compatible Apple LLVM 8.0.0 (clang-800.0.42.1)]'
+04-20 14:32:50 swap_units.action_swap_units 89:KiCad build version: Unknown
+04-20 14:32:50 swap_units.action_swap_units 90:Swap units plugin version: 35 started
+04-20 14:32:50 swap_units.swap_units 45:Starting swap_units
+04-20 14:32:50 swap_units.swap_units 53:main sch file is: /Users/paul/Google Drive/elektronik/kicad/privat/LED_Driver/LED_Driver.sch
+04-20 14:32:50 swap_units.swap_units 54:main pcb file is: /Users/paul/Google Drive/elektronik/kicad/privat/LED_Driver/LED_Driver.kicad_pcb
+04-20 14:32:50 swap_units.swap_units 55:sch cache file is: /Users/paul/Google Drive/elektronik/kicad/privat/LED_Driver/LED_Driver-cache.lib
+04-20 14:32:50 swap_units.swap_units 60:Swapping pins: 2,1
+04-20 14:32:50 swap_units.swap_units 65:Swaping units on: R1
+04-20 14:32:50 swap_units.swap_units 80:Sch files to modify are: ['/Users/paul/Google Drive/elektronik/kicad/privat/LED_Driver/OD_MOSFET_DRIVER.sch']
+04-20 14:32:50 swap_units.swap_units 93:Symbol name is: Device:R
+04-20 14:32:50 swap_units.swap_units 109:Found symbol Device:R in -cache.lib
+04-20 14:32:50 swap_units.swap_units 134:Number of units in symbols: 1
+04-20 14:32:50 swap_units.swap_units 155:Units to swap are: 1, 1
+04-20 14:32:50 swap_units.swap_units 186:Files where the units are:
+	/Users/paul/Google Drive/elektronik/kicad/privat/LED_Driver/OD_MOSFET_DRIVER.sch
+	/Users/paul/Google Drive/elektronik/kicad/privat/LED_Driver/OD_MOSFET_DRIVER.sch
+04-20 14:32:50 swap_units.swap_units 226:Unit 1 is on multiple hierarchy sheet
+04-20 14:32:50 swap_units.swap_units 227:$Comp
+L Device:R R?
+U 1 1 5E9E0238
+P 5300 4100
+AR Path="/5E9E0238" Ref="R?"  Part="1" 
+AR Path="/5E9DEF1C/5E9E0238" Ref="R1"  Part="1" 
+AR Path="/5E9E2438/5E9E0238" Ref="R2"  Part="1" 
+F 0 "R1" V 5093 4100 50  0000 C CNN
+F 1 "R" V 5184 4100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5230 4100 50  0001 C CNN
+F 3 "~" H 5300 4100 50  0001 C CNN
+	1    5300 4100
+	0    1    1    0   
+
+04-20 14:32:50 swap_units.swap_units 228:Unit 1 description is around lines: 32
+04-20 14:32:50 swap_units.swap_units 253:Swapping unit 1 U field
+04-20 14:32:50 swap_units.swap_units 256:Swapping unit 1 AR fields
+04-20 14:32:50 swap_units.swap_units 256:Swapping unit 1 AR fields
+04-20 14:32:50 swap_units.swap_units 256:Swapping unit 1 AR fields
+04-20 14:32:50 swap_units.swap_units 297:Unit 2 is on multiple hierarchy sheet
+04-20 14:32:50 swap_units.swap_units 298:$Comp
+L Device:R R?
+U 1 1 5E9E0238
+P 5300 4100
+AR Path="/5E9E0238" Ref="R?"  Part="1" 
+AR Path="/5E9DEF1C/5E9E0238" Ref="R1"  Part="1" 
+AR Path="/5E9E2438/5E9E0238" Ref="R2"  Part="1" 
+F 0 "R1" V 5093 4100 50  0000 C CNN
+F 1 "R" V 5184 4100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5230 4100 50  0001 C CNN
+F 3 "~" H 5300 4100 50  0001 C CNN
+	1    5300 4100
+	0    1    1    0   
+
+04-20 14:32:50 swap_units.swap_units 299:Unit 2 description is around lines: 32
+04-20 14:32:50 swap_units.swap_units 324:Swapping second unit on the same page
+04-20 14:32:50 swap_units.swap_units 325:Swapping unit 1 U field
+04-20 14:32:50 swap_units.swap_units 329:Swapping unit 1 AR fields
+04-20 14:32:50 swap_units.swap_units 329:Swapping unit 1 AR fields
+04-20 14:32:50 swap_units.swap_units 329:Swapping unit 1 AR fields
+04-20 14:32:50 swap_units.swap_units 343:Swapping pins in layout
+04-20 14:32:50 swap_units.swap_units 377:Saved the layout.
+04-20 14:32:50 swap_units.swap_units 380:Save the schematics
+04-20 14:32:50 swap_units.swap_units 414:Saved the schematics.

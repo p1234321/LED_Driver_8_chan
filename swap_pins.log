@@ -1,0 +1,41 @@
+04-20 14:33:05 swap_pins.action_swap_pins 87:Plugin executed on: 'darwin'
+04-20 14:33:05 swap_pins.action_swap_pins 88:Plugin executed with python version: '2.7.13 (default, Mar  6 2019, 04:43:15) \n[GCC 4.2.1 Compatible Apple LLVM 8.0.0 (clang-800.0.42.1)]'
+04-20 14:33:05 swap_pins.action_swap_pins 89:KiCad build version: Unknown
+04-20 14:33:05 swap_pins.action_swap_pins 90:Swap pins plugin version: 13 started
+04-20 14:33:05 swap_pins.swap_pins 55:Starting swap_pins
+04-20 14:33:05 swap_pins.swap_pins 62:main sch file is: /Users/paul/Google Drive/elektronik/kicad/privat/LED_Driver/LED_Driver.sch
+04-20 14:33:05 swap_pins.swap_pins 63:main pcb file is: /Users/paul/Google Drive/elektronik/kicad/privat/LED_Driver/LED_Driver.kicad_pcb
+04-20 14:33:05 swap_pins.swap_pins 64:sch cache file is: /Users/paul/Google Drive/elektronik/kicad/privat/LED_Driver/LED_Driver-cache.lib
+04-20 14:33:05 swap_pins.swap_pins 78:Swaping pins: 2, 1 on: R1 on nets: IN, Net-(Q1-Pad1)
+04-20 14:33:05 swap_pins.swap_pins 469:found subsheet:
+	/Users/paul/Google Drive/elektronik/kicad/privat/LED_Driver/OD_MOSFET_DRIVER.sch
+ in:
+	/Users/paul/Google Drive/elektronik/kicad/privat/LED_Driver/LED_Driver.sch, line: 19
+04-20 14:33:05 swap_pins.swap_pins 469:found subsheet:
+	/Users/paul/Google Drive/elektronik/kicad/privat/LED_Driver/OD_MOSFET_DRIVER.sch
+ in:
+	/Users/paul/Google Drive/elektronik/kicad/privat/LED_Driver/LED_Driver.sch, line: 19
+04-20 14:33:05 swap_pins.swap_pins 85:All schematics files are:
+/Users/paul/Google Drive/elektronik/kicad/privat/LED_Driver/LED_Driver.sch
+/Users/paul/Google Drive/elektronik/kicad/privat/LED_Driver/OD_MOSFET_DRIVER.sch
+04-20 14:33:05 swap_pins.swap_pins 125:Device:R unit: 1 present on page: /Users/paul/Google Drive/elektronik/kicad/privat/LED_Driver/OD_MOSFET_DRIVER.sch
+04-20 14:33:05 swap_pins.swap_pins 134:Looking for: Device:R in cache.lib
+04-20 14:33:05 swap_pins.swap_pins 157:Found symbol in cache library
+04-20 14:33:05 swap_pins.swap_pins 173:Symbol has 1 units
+04-20 14:33:05 swap_pins.swap_pins 191:Relevant pins are: name: ~, number: 2; name: ~, number: 1
+04-20 14:33:05 swap_pins.swap_pins 203:Relevant pins are on units: 1, 1
+04-20 14:33:05 swap_pins.swap_pins 212:Unit 1 on page: /Users/paul/Google Drive/elektronik/kicad/privat/LED_Driver/OD_MOSFET_DRIVER.sch at: 5300, 4100
+04-20 14:33:05 swap_pins.swap_pins 214:Unit 2 on page: /Users/paul/Google Drive/elektronik/kicad/privat/LED_Driver/OD_MOSFET_DRIVER.sch at: 5300, 4100
+04-20 14:33:05 swap_pins.swap_pins 220:Pin 1 at: 5300, 4250
+04-20 14:33:05 swap_pins.swap_pins 221:Pin 2 at: 5300, 3950
+04-20 14:33:05 swap_pins.swap_pins 243:Pin 1 rotation: 3
+04-20 14:33:05 swap_pins.swap_pins 244:Pin 2 rotation: 1
+04-20 14:33:05 swap_pins.swap_pins 267:Found label near pin 1
+04-20 14:33:05 swap_pins.swap_pins 271:list_line_1=[('Text HLabel 4600 4100 0    50   Input ~ 0\n', 'IN\n', 75, 715.8910531638177)]
+04-20 14:33:05 swap_pins.swap_pins 303:list_line_2=[]
+04-20 14:33:05 swap_pins.swap_pins 319:Swapping on the same page
+04-20 14:33:05 swap_pins.swap_pins 335:Only pin 1 is connected
+04-20 14:33:05 swap_pins.swap_pins 343:Labels swapped
+04-20 14:33:05 swap_pins.swap_pins 353:Saved the schematics in same file.
+04-20 14:33:05 swap_pins.swap_pins 408:Pad nets swapped
+04-20 14:33:05 swap_pins.swap_pins 414:Saved the layout.

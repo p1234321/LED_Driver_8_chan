@@ -1,0 +1,5 @@
+04-20 14:34:01 archive_project.action_archive_project 108:Plugin executed on: 'darwin'
+04-20 14:34:01 archive_project.action_archive_project 109:Plugin executed with python version: '2.7.13 (default, Mar  6 2019, 04:43:15) \n[GCC 4.2.1 Compatible Apple LLVM 8.0.0 (clang-800.0.42.1)]'
+04-20 14:34:01 archive_project.action_archive_project 110:KiCad build version: Unknown
+04-20 14:34:01 archive_project.action_archive_project 111:Archive plugin version: 42 started
+04-20 14:34:06 archive_project.action_archive_project 156:Action plugin canceled on first dialog
